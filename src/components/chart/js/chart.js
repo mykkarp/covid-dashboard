@@ -14,6 +14,10 @@ export async function chart(country, signification) {
   `;
   const ctx = document.querySelector('#chartCanvas').getContext("2d");
 
+  let maxAmountOfDataForNormalDisplayChart = 250;
+  if (countrySignifications.length > maxAmountOfDataForNormalDisplayChart) {
+    countrySignifications.splice(0, countrySignifications.length - maxAmountOfDataForNormalDisplayChart);
+  }
   const chart = {
     type: "bar",
     data: {

@@ -30,14 +30,10 @@
 }
 
 .leaflet-bottom.leaflet-left {
-  left: 50%;
-  transform: translateX(-50%);
-  display: grid;
-  grid-template-columns: 0.05fr 1fr;
-  grid-template-rows: 1fr;
   width: 100%;
   padding: 0 10px;
-  align-items: end;
+  display: flex;
+  justify-content: center;
 }
 
 .map__full-screen-button {
@@ -152,7 +148,6 @@
     align-items: center;
     justify-self: center;
     flex-wrap: wrap;
-    margin-left: 10px;
 
     span {
       position: relative;

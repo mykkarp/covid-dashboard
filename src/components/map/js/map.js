@@ -58,16 +58,16 @@ export default class Map {
 
     legend.onAdd = (map) => {
       const div = L.DomUtil.create("div", "map__legend");
-      div.innerHTML += "<div><i style=\"background: green\"></i><span><1000</span></div>";
-      div.innerHTML += "<div><i style=\"background: yellow\"></i><span><100000</span></div>";
-      div.innerHTML += "<div><i style=\"background: orange\"></i><span><250000</span></div>";
-      div.innerHTML += "<div><i style=\"background: red\"></i><span><500000</span></div>";
-      div.innerHTML += "<div><i style=\"background: darkred\"></i><span>>500000</span></div>";
+      div.innerHTML += "<div><i style=\"background: green\"></i><span><1 000</span></div>";
+      div.innerHTML += "<div><i style=\"background: yellow\"></i><span><100 000</span></div>";
+      div.innerHTML += "<div><i style=\"background: orange\"></i><span><250 000</span></div>";
+      div.innerHTML += "<div><i style=\"background: red\"></i><span><500 000</span></div>";
+      div.innerHTML += "<div><i style=\"background: darkred\"></i><span>>500 000</span></div>";
       return div;
     };
 
     legend.addTo(this.map);
-    
+
     this.addParamChanger(param);
   }
 
@@ -113,7 +113,7 @@ export default class Map {
         this.tooltip.style.top = `${this.y + 20}px`;
         this.tooltip.style.left = `${this.x + 10}px`;
         this.tooltip.classList.remove("map__tooltip--hide");
-        this.tooltip.innerHTML = `${item.name}<br>${param}<br>${value}`;
+        this.tooltip.innerHTML = `${item.name}<br>${param}<br>${Intl.NumberFormat().format(value)}`;
       });
 
       circle.addEventListener("mouseout", () => {
@@ -204,7 +204,7 @@ export default class Map {
           default: break;
         }
         this.addCircles(Properties.cases);
-        
+
         paramButtons.forEach((item) => {
           item.classList.remove("param-changer__button--active");
         });
