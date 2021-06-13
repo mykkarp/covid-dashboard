@@ -1,6 +1,6 @@
 # Covid dashboard
 
-### 🖥Deploy: https://urfeen.github.io/codiv-dashboard/dist/
+### 🖥Deploy: https://urfeen.github.io/covide-dashboard/dist/
 ___
 ### 🛠Functionality
 The covide dashboard supports such features as:
