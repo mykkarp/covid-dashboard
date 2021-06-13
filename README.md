@@ -7,7 +7,7 @@ The covide dashboard supports such features as:
 - Interactive map;
 - Chart;
 - Table with a list of all countries and input for search certain country;
-- Buttons for switch mode (recovered,  deaths, confirmed);
+- Buttons for switch mode (recovered,  deaths, confirmed).
 ___
 
 ### 🖼Screenshot
