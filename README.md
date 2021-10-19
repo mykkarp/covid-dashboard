@@ -1,6 +1,6 @@
 # Covid dashboard
 
-### 🖥Deploy: https://urfeen.github.io/covid-dashboard/dist/
+### 🖥Deploy: https://mykkarp.github.io/covid-dashboard/dist/
 ___
 ### 🛠Functionality
 The covid dashboard supports such features as:
